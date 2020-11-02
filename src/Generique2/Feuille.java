@@ -38,12 +38,12 @@ public class Feuille <T extends Sommable<T>  & Comparable<T>> implements ArbreGe
 
     @Override
     public T min() {
-        return null;
+        return this.min();
     }
 
     @Override
     public T max() {
-        return null;
+        return this.max();
     }
 
     @Override
