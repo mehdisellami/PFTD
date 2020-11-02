@@ -14,32 +14,32 @@ public class Feuille implements Arbre {
 
     @Override
     public int taille() {
-        return 0;
+        return 1;
     }
 
     @Override
     public boolean contient(Integer val) {
-        return false;
+        return this.numFeuille==val;
     }
 
     @Override
     public Set<Integer> valeurs() {
-        return null;
+        return this.valeurs();
     }
 
     @Override
     public Integer somme() {
-        return null;
+        return this.somme();
     }
 
     @Override
     public Integer min() {
-        return null;
+        return this.min();
     }
 
     @Override
     public Integer max() {
-        return null;
+        return this.max();
     }
 
     @Override

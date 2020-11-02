@@ -1,10 +1,8 @@
-package Generique;
-
-import Arbres.Arbre;
+package Generique2;
 
 import java.util.Set;
 
-public class Feuille <T> implements ArbreGen <T> {
+public class Feuille <T extends Sommable<T>  & Comparable<T>> implements ArbreGen<T> {
 
     T numFeuille;
 
@@ -31,6 +29,26 @@ public class Feuille <T> implements ArbreGen <T> {
     @Override
     public Set<T> valeurs() {
         return this.valeurs();
+    }
+
+    @Override
+    public T somme() {
+        return null;
+    }
+
+    @Override
+    public T min() {
+        return null;
+    }
+
+    @Override
+    public T max() {
+        return null;
+    }
+
+    @Override
+    public boolean estTrie() {
+        return false;
     }
 
 
